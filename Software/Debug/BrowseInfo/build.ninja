@@ -1,0 +1,41 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe" $flags
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe" $flags
+
+rule MAKEBROWSE
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe" $flags
+
+rule PDBLINK
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe" $flags
+
+
+
+#Build steps
+build D$:\Projects\BluePillCaliper\Software\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file D$:\Projects\BluePillCaliper\Software\main.c -xcl_file D$:\Projects\BluePillCaliper\Software\Debug\BrowseInfo\main.xcl -macro_file D$:\Projects\BluePillCaliper\Software\Debug\BrowseInfo\main.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = D$:\Projects\BluePillCaliper\Software\main.c -o D$:\Projects\BluePillCaliper\Software\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -On --predef_macros D$:\Projects\BluePillCaliper\Software\Debug\BrowseInfo\main.tmp
+  rspfile_name = D$:\Projects\BluePillCaliper\Software\Debug\BrowseInfo\main.xcl.rsp
+
+build D$:\Projects\BluePillCaliper\Software\Debug\BrowseInfo\main.pbi : INDEXER D$:\Projects\BluePillCaliper\Software\Debug\BrowseInfo\main.xcl |  $
+D$:\Projects\BluePillCaliper\Software\main.c
+  flags = -out=D$:\Projects\BluePillCaliper\Software\Debug\BrowseInfo\main.pbi -f D$:\Projects\BluePillCaliper\Software\Debug\BrowseInfo\main.xcl
+
+build D$:\Projects\BluePillCaliper\Software\Debug\BrowseInfo\caliperBringup.pbw : MAKEBROWSE D$:\Projects\BluePillCaliper\Software\Debug\BrowseInfo\caliperBringup.pbd
+  flags = D$:\Projects\BluePillCaliper\Software\Debug\BrowseInfo\caliperBringup.pbd -output D$:\Projects\BluePillCaliper\Software\Debug\BrowseInfo\caliperBringup.pbw
+
+build D$:\Projects\BluePillCaliper\Software\Debug\BrowseInfo\caliperBringup.pbd : PDBLINK D$:\Projects\BluePillCaliper\Software\Debug\BrowseInfo\main.pbi
+  flags = -M D$:\Projects\BluePillCaliper\Software\Debug\BrowseInfo\caliperBringup.pbd D$:\Projects\BluePillCaliper\Software\Debug\BrowseInfo\main.pbi
+
