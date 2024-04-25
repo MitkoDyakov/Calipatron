@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name AA_Caliper)(type KiCad)(uri ${KIPRJMOD}/AA_Caliper.pretty)(options "")(descr ""))
+)

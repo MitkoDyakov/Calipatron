@@ -1,0 +1,43 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# MC-306_32.7680K-A__ROHS
+#
+DEF MC-306_32.7680K-A__ROHS Y 0 40 Y Y 1 L N
+F0 "Y" -200 250 50 H V L BNN
+F1 "MC-306_32.7680K-A__ROHS" -201 -400 50 H V L BNN
+F2 "XTAL_MC-306_32.7680K-A__ROHS" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "EPSON" 0 0 50 H I L BNN "MF"
+F5 "2.54 mm" 0 0 50 H I L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F6 "NON STANDARD-4 EPSON" 0 0 50 H I L BNN "Package"
+F7 "None" 0 0 50 H I L BNN "Price"
+F8 "https://www.snapeda.com/parts/MC-306%2032.7680K-A:%20ROHS/EPSON/view-part/?ref=eda" 0 0 50 H I L BNN "Check_prices"
+F9 "Manufacturer Recommendations" 0 0 50 H I L BNN "STANDARD"
+F10 "N/A" 0 0 50 H I L BNN "PARTREV"
+F11 "https://www.snapeda.com/parts/MC-306%2032.7680K-A:%20ROHS/EPSON/view-part/?ref=snap" 0 0 50 H I L BNN "SnapEDA_Link"
+F12 "MC-306 32.7680K-A: ROHS" 0 0 50 H I L BNN "MP"
+F13 "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=4270883&manufacturer=EPSON&part_name=MC-306 32.7680K-A: ROHS&search_term=mc-306" 0 0 50 H I L BNN "Purchase-URL"
+F14 "\n32.768 kHz ±100ppm Crystal 12.5pF 35 kOhms 4-SOJ, 5.50mm pitch\n" 0 0 50 H I L BNN "Description"
+F15 "In Stock" 0 0 50 H I L BNN "Availability"
+F16 "EPSON" 0 0 50 H I L BNN "MANUFACTURER"
+DRAW
+P 2 0 0 16 -55 100 55 100 N
+P 2 0 0 16 55 100 55 -100 N
+P 2 0 0 16 55 -100 -55 -100 N
+P 2 0 0 16 -55 100 -55 -100 N
+P 2 0 0 16 92 100 92 -100 N
+P 2 0 0 16 -92 100 -92 -100 N
+P 2 0 0 6 -200 0 -100 0 N
+P 2 0 0 6 100 0 200 0 N
+S -200 -300 200 200 0 0 10 f
+X ~ 4 300 0 100 L 40 40 0 0 P 
+X ~ 1 -300 0 100 R 40 40 0 0 P 
+X NC 2 300 -200 100 L 40 40 0 0 N 
+X NC 3 300 -200 100 L 40 40 0 0 N 
+ENDDRAW
+ENDDEF
+#
+# End Library
