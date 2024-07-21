@@ -130,8 +130,8 @@ int main(void)
   
   HAL_StatusTypeDef ret;
   uint16_t raw;
-  TIM1->CCR1 = 1;  
-//  HAL_TIM_Base_Start_IT(&htim2);  
+  TIM2->CCR1 = 1;  
+  HAL_TIM_Base_Start_IT(&htim2);  
    
   ret = HAL_I2C_IsDeviceReady(&hi2c1, DISPLAY_ADDRESS_B << 1, 5, HAL_MAX_DELAY);
   
