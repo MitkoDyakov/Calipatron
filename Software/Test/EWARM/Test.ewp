@@ -1108,6 +1108,12 @@
           </file>
         </group>
         <file>
+          <name>$PROJ_DIR$\..\Core\Src\notchFilter.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\Core\Inc\notchFilter.h</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\Core\Src\main.c</name>
         </file>
         <file>
@@ -1117,7 +1123,7 @@
           <name>$PROJ_DIR$\..\Core\Src\adc.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$/../Core/Src/dma.c</name>
+          <name>$PROJ_DIR$\..\Core\Src\dma.c</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\Core\Src\i2c.c</name>
@@ -1143,19 +1149,19 @@
         <group>
           <name>App</name>
           <file>
-            <name>$PROJ_DIR$/../USB_DEVICE/App/usb_device.c</name>
+            <name>$PROJ_DIR$\..\USB_DEVICE\App\usb_device.c</name>
           </file>
           <file>
-            <name>$PROJ_DIR$/../USB_DEVICE/App/usbd_desc.c</name>
+            <name>$PROJ_DIR$\..\USB_DEVICE\App\usbd_desc.c</name>
           </file>
           <file>
-            <name>$PROJ_DIR$/../USB_DEVICE/App/usbd_cdc_if.c</name>
+            <name>$PROJ_DIR$\..\USB_DEVICE\App\usbd_cdc_if.c</name>
           </file>
         </group>
         <group>
           <name>Target</name>
           <file>
-            <name>$PROJ_DIR$/../USB_DEVICE/Target/usbd_conf.c</name>
+            <name>$PROJ_DIR$\..\USB_DEVICE\Target\usbd_conf.c</name>
           </file>
         </group>
       </group>
@@ -1175,13 +1181,13 @@
         <name>$PROJ_DIR$\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c</name>
+        <name>$PROJ_DIR$\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c</name>
+        <name>$PROJ_DIR$\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c</name>
+        <name>$PROJ_DIR$\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c</name>
@@ -1241,16 +1247,16 @@
     <group>
       <name>USB_Device_Library</name>
       <file>
-        <name>$PROJ_DIR$/../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c</name>
+        <name>$PROJ_DIR$\..\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$/../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c</name>
+        <name>$PROJ_DIR$\..\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$/../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c</name>
+        <name>$PROJ_DIR$\..\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$/../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c</name>
+        <name>$PROJ_DIR$\..\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Src\usbd_cdc.c</name>
       </file>
     </group>
   </group>

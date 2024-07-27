@@ -32,11 +32,12 @@
 
 #include "ssd1306_fonts.h"
 #include "usbd_cdc_if.h"
+#include "notchFilter.h"
 #include <string.h>
 #include <stdio.h>
 
-#define ADC_BUF_LEN 3072u
-uint16_t adc_buf[ADC_BUF_LEN];
+#define ADC_BUF_LEN (6072u)
+volatile uint16_t adc_buf[ADC_BUF_LEN];
 
 #define DISPLAY_ADDRESS_A (0x3Du)
 #define DISPLAY_ADDRESS_B (0x3Cu) 
@@ -175,6 +176,7 @@ int main(void)
   ssd1306_WriteString("Oops!", Font_16x26, White);
   ssd1306_UpdateScreen();
   uint8_t msg[5] = {0};
+  uint16_t i=0;
 
   /* USER CODE END 2 */
 
@@ -182,16 +184,14 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-  
     if(0 == uartReadyFlag)
     {
-        for(uint16_t i=0;i < ADC_BUF_LEN; i++)
+        for(i=0; i<ADC_BUF_LEN; i++)
         {
             memset(msg, 0, 5);
             sprintf(msg, "%d\r", adc_buf[i]);
-            CDC_Transmit_FS(msg, 5);;
+            while(USBD_BUSY == CDC_Transmit_FS(msg, 5));
         }
-        
         uartReadyFlag = 1;
         startADC = 0;
     }
