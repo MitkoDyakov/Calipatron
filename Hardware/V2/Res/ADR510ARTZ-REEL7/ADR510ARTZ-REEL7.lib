@@ -1,0 +1,45 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# ADR510ARTZ-REEL7
+#
+DEF ADR510ARTZ-REEL7 U 0 40 Y Y 1 L N
+F0 "U" -400 330 50 H V L BNN
+F1 "ADR510ARTZ-REEL7" -400 -400 50 H V L BNN
+F2 "SOT95P237X112-3N" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "Analog Devices" 0 0 50 H I L BNN "MF"
+F5 "\n1.0 V Precision Low Noise Shunt Voltage Reference\n" 0 0 50 H I L BNN "Description"
+F6 "SOT-3 Analog Devices" 0 0 50 H I L BNN "Package"
+F7 "None" 0 0 50 H I L BNN "Price"
+F8 "https://www.snapeda.com/parts/ADR510ARTZ-REEL7/Analog+Devices/view-part/?ref=eda" 0 0 50 H I L BNN "Check_prices"
+F9 "IPC-7351B" 0 0 50 H I L BNN "STANDARD"
+F10 "B" 0 0 50 H I L BNN "PARTREV"
+F11 "https://www.snapeda.com/parts/ADR510ARTZ-REEL7/Analog+Devices/view-part/?ref=snap" 0 0 50 H I L BNN "SnapEDA_Link"
+F12 "ADR510ARTZ-REEL7" 0 0 50 H I L BNN "MP"
+F13 "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=431040&manufacturer=Analog Devices&part_name=ADR510ARTZ-REEL7&search_term=adr510" 0 0 50 H I L BNN "Purchase-URL"
+F14 "In Stock" 0 0 50 H I L BNN "Availability"
+F15 "Analog Devices" 0 0 50 H I L BNN "MANUFACTURER"
+DRAW
+P 2 0 0 10 -150 -50 -200 50 N
+P 2 0 0 10 -200 50 -250 -50 N
+P 2 0 0 10 -250 50 -200 50 N
+P 2 0 0 10 -250 -50 -200 -50 N
+P 2 0 0 10 -200 -50 -150 -50 N
+P 2 0 0 10 -200 50 -150 50 N
+P 2 0 0 10 -250 50 -270 30 N
+P 2 0 0 10 -150 50 -130 70 N
+P 2 0 0 10 -200 50 -200 200 N
+P 2 0 0 10 -200 200 -400 200 N
+P 2 0 0 10 -200 -50 -200 -200 N
+P 2 0 0 10 -200 -200 -400 -200 N
+S -400 -300 400 300 0 0 6 f
+X ~ 2 -500 -200 100 R 40 40 0 0 P 
+X ~ 1 -500 200 100 R 40 40 0 0 P 
+X TRIM/NC 3 500 0 100 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

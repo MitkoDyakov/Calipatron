@@ -1,0 +1,35 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# TSM-104-02-X-SH
+#
+DEF TSM-104-02-X-SH J 0 40 Y Y 1 L N
+F0 "J" -200 250 50 H V L BNN
+F1 "TSM-104-02-X-SH" -200 -350 50 H V L BNN
+F2 "SAMTEC_TSM-104-02-X-SH" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "Samtec" 0 0 50 H I L BNN "MF"
+F5 "3.05 mm" 0 0 50 H I L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F6 "None" 0 0 50 H I L BNN "Package"
+F7 "None" 0 0 50 H I L BNN "Price"
+F8 "https://www.snapeda.com/parts/TSM-104-02-T-SH/Samtec/view-part/?ref=eda" 0 0 50 H I L BNN "Check_prices"
+F9 "Manufacturer Recommendations" 0 0 50 H I L BNN "STANDARD"
+F10 "11-6-92" 0 0 50 H I L BNN "PARTREV"
+F11 "https://www.snapeda.com/parts/TSM-104-02-T-SH/Samtec/view-part/?ref=snap" 0 0 50 H I L BNN "SnapEDA_Link"
+F12 "TSM-104-02-T-SH" 0 0 50 H I L BNN "MP"
+F13 "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=3463956&manufacturer=Samtec&part_name=TSM-104-02-T-SH&search_term=tsm-104-02-t-sh" 0 0 50 H I L BNN "Purchase-URL"
+F14 "\nTSM - Samtec 2.54mm Single Row Horizontal Surface Mount Header 8.13mm Post Height (02) - Fast Stock\n" 0 0 50 H I L BNN "Description"
+F15 "In Stock" 0 0 50 H I L BNN "Availability"
+F16 "Samtec" 0 0 50 H I L BNN "MANUFACTURER"
+DRAW
+S -200 -300 200 200 0 0 10 f
+X 01 01 -400 100 200 R 40 40 0 0 P 
+X 02 02 -400 0 200 R 40 40 0 0 P 
+X 03 03 -400 -100 200 R 40 40 0 0 P 
+X 04 04 -400 -200 200 R 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

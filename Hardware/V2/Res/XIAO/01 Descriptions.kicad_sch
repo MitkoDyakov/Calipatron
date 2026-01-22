@@ -1,0 +1,160 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "2162a184-5c2f-49da-9a8a-e93a4179fa7c")
+	(paper "A4")
+	(lib_symbols)
+	(polyline
+		(pts
+			(xy 25.4 40.64) (xy 264.16 40.64)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "61c49a43-5b3a-41bf-be8b-93b6d7fe7892")
+	)
+	(polyline
+		(pts
+			(xy 45.72 25.4) (xy 45.72 152.4)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "b9f41997-3866-44d8-a070-6d945bac02a5")
+	)
+	(polyline
+		(pts
+			(xy 25.4 33.02) (xy 264.16 33.02)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "c9784a53-7e4a-4de7-819c-417a53535fd3")
+	)
+	(polyline
+		(pts
+			(xy 200.66 25.4) (xy 200.66 152.4)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "e0466b42-b03b-4815-b0dc-2684c769f16a")
+	)
+	(polyline
+		(pts
+			(xy 231.14 25.4) (xy 231.14 152.4)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "edcd7cde-d599-47ab-8b75-dc0ca3272b87")
+	)
+	(rectangle
+		(start 25.4 25.4)
+		(end 264.16 152.4)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 399f453e-3e4f-484a-918f-e762db1b9f25)
+	)
+	(text "Date"
+		(exclude_from_sim no)
+		(at 215.9 30.48 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+			)
+		)
+		(uuid "0baaa1ea-dee4-4855-abf6-01c161116acd")
+	)
+	(text "Descriptions"
+		(exclude_from_sim no)
+		(at 109.22 30.48 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.4064)
+				(bold yes)
+			)
+		)
+		(uuid "2cc33b90-9a61-4551-b977-1818db83a6bb")
+	)
+	(text "Linus.Liao"
+		(exclude_from_sim no)
+		(at 246.38 38.1 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(bold yes)
+			)
+		)
+		(uuid "4b355be0-f939-47d2-9157-8897a1e6b2e5")
+	)
+	(text "2024/3/28"
+		(exclude_from_sim no)
+		(at 215.9 38.1 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(bold yes)
+			)
+		)
+		(uuid "7c3831fb-92ef-4638-8949-e68b05c534c9")
+	)
+	(text "v1.0"
+		(exclude_from_sim no)
+		(at 35.56 38.1 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(bold yes)
+			)
+		)
+		(uuid "8913fe26-b1d6-4b02-8636-d3d010b37d39")
+	)
+	(text "Initial version"
+		(exclude_from_sim no)
+		(at 63.5 38.1 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(bold yes)
+			)
+		)
+		(uuid "bf16a902-3352-4fa6-82e9-d0c7c2c62084")
+	)
+	(text "Name"
+		(exclude_from_sim no)
+		(at 246.38 30.226 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+			)
+		)
+		(uuid "de69c3ae-3a5b-4152-a9da-5bfcb76198ca")
+	)
+	(text "Version"
+		(exclude_from_sim no)
+		(at 35.56 30.226 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.4064)
+				(bold yes)
+			)
+		)
+		(uuid "fa431dfc-dd40-414c-afbc-26b99a2d932c")
+	)
+)
